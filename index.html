@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeFit: 30 Days Fitness Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+     <!--FAVICON-->
+     <link rel="icon" type="image/x-icon" href="assests/logo.png">
+     
+
+</head>
+<body>
+
+
+    <!--NAVBAR SECTION-->
+    <header>
+        <div class="limiter">
+            <nav class="navbar">
+                <div class="logo">
+                    <a onclick="logo1()" href="#home">
+                        <img src="assests/logo.png" alt=""> 
+                    </a>
+                </div>
+
+                <ul class="navlinks" id="links" >
+                    <li class="navitems" ><a href="#home" id="Home" class="itemlinks active">Home</a></li>
+                    <li class="navitems"><a href="#learn" id="Learn" class="itemlinks">Learn More</a></li>
+                    <li class="navitems"><a href="#aboutus" id="Aboutus" class="itemlinks">About</a></li>
+
+                </ul>
+
+                <div id="burger">
+                    <div class="burgerlines"></div>
+                    <div class="burgerlines"></div>
+                    <div class="burgerlines"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <!--HOME PAGE-->
+    <div class="home" id="home" >
+        <h1 class = "title" data-aos="fade-up" data-aos-duration="1000">HOMEFIT:</h1>
+        <h2 class = "subtitle" data-aos="fade-up"data-aos-duration="1000">30 DAYS FITNESS CHALLENGE</h2>
+
+        <div class="btncont" data-aos="zoom-in">
+            <button onclick="downloadAPK()" class = "download">Download</button>
+            <script>
+                function downloadAPK() {
+                  var link = document.createElement('a');
+                  link.href = 'assests/HomeFit.apk';
+                  link.download = 'HomeFit.apk';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }
+                </script>
+            <a class = "learn" href = "#learn" >
+                <button class="lbtn"data-aos="zoom-in" data-aos-duration="3000">Learn more </button>
+            </a>
+        </div>  
+    </div>
+
+    <!--LEARN MORE-->
+    <div class="learnmore" id="learn">
+        <h1 class = "title1"  data-aos="fade-up" data-aos-duration="1000">Learn More</h1>
+        
+        <div class="maincont">
+
+            <div class="leftcont" data-aos="fade-right" data-aos-duration="1000">
+                <img src="assests/dashboard.png" alt="img">
+                
+            </div>
+
+            <div class="rightcont" data-aos="fade-left" data-aos-duration="1000">
+                <div class="desc">
+                    <p> HomeFit provides users with a centralized and visually appealing 
+                        overview of the fitness and health-related data. It serves as a 
+                        command center where users can access key information 
+                        and features of the app. The dashboard is designed to be intuitive and 
+                        user-friendly, featuring a clean and modern interface that encourages 
+                        engagement and motivation.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="maincont1">
+            <div class="leftcont1" data-aos="fade-left" data-aos-duration="1000">
+                <div class="desc">
+                    <p class="p1">
+                        The BMI (Body Mass Index) calculator module in the app provides 
+                        users with a tool to determine their BMI quickly and easily, a 
+                        widely used metric for assessing body weight and health. The BMI 
+                        calculator module is designed to be a simple yet effective tool 
+                        for users to evaluate their body composition and gain insights 
+                        into their weight status. It offers a straightforward and intuitive 
+                        interface, ensuring ease of use for users of all fitness levels.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rightcont1" data-aos="fade-right" data-aos-duration="1000">
+                <img src="assests/bmi.png" alt="img" > 
+            </div>
+        </div>
+
+        <div class="maincont2">
+            <div class="leftcont2" data-aos="fade-right" data-aos-duration="1000">
+                <img src="assests/days.png" alt="img" >
+            </div>
+
+            <div class="rightcont2" data-aos="fade-left" data-aos-duration="1000">
+                <div class="desc">
+                    <p class="p2">
+                        The day selector feature in the app allows users to navigate and 
+                        select specific days or dates to view and track their fitness 
+                        activities and progress. The day selector in the fitness mobile 
+                        app provides users with a user-friendly interface to choose a 
+                        specific day or date for accessing and managing their 
+                        fitness-related data. It simplifies the process of reviewing past 
+                        activities, planning future workouts, and tracking progress over 
+                        time.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="maincont3">
+            <div class="leftcont3" data-aos="fade-left" data-aos-duration="1000">
+                <div class="desc">
+                    <p class="p3">
+                        The exercise UI module in a mobile fitness app provides users with 
+                        a comprehensive and interactive interface to access and perform 
+                        various exercises and workouts. It offers a user-friendly platform 
+                        that guides users through their fitness routines and helps them 
+                        achieve their exercise goals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rightcont3" data-aos="fade-right" data-aos-duration="1000">
+                <img src="assests/exercise.png" alt="img" >
+            </div>
+
+        </div> 
+    </div>
+
+     <!--about us-->
+
+     <div class="aboutus">
+        <div class="title2" id="aboutus">
+            <h1 class="titlea" data-aos="fade-up" data-aos-duration="1000">About</h1>
+        </div>
+
+        <div class="mcont">
+            <div class="lcont">
+                <h2 class="what" data-aos="zoom-in" data-aos-duration="1000">What is HomeFit?</h2>
+                <p class="ans" data-aos="fade-up" data-aos-duration="1000">
+                    HomeFit is a comprehensive fitness mobile app that empowers users to achieve their 
+                    fitness goals in the comfort of their own homes. With a wide range of home workouts, 
+                    expert guidance, personalized features, and community support, HomeFit is your go-to 
+                    fitness companion for a healthy and active lifestyle. Additionally, HomeFit encourages 
+                    community engagement and interaction. Users can connect with fellow fitness enthusiasts, 
+                    participate in challenges and competitions, and share their achievements on social media 
+                    platforms. This creates a supportive and motivating environment where users can inspire 
+                    and be inspired by others on their fitness journeys.
+                </p>
+
+            </div>
+
+            <div class="rcont">
+                <h2 class="what" data-aos="zoom-in" data-aos-duration="1000">Benefits of HomeFit?</h2>
+                <p class="ans" data-aos="fade-up" data-aos-duration="1000">
+                    Using the HomeFit fitness mobile app offers numerous benefits that can enhance your fitness 
+                    journey and overall well-being. Using the HomeFit fitness mobile app offers the convenience 
+                    of home workouts, cost-effectiveness, workout variety, expert guidance, personalization, 
+                    goal tracking, motivation, nutrition support, community engagement, and flexibility. 
+                    These benefits empower you to achieve your fitness goals, maintain a healthy lifestyle, 
+                    and improve your overall well-being.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <div class="footer">
+        <p class="foot">Website of HomeFit Mobile App</p>
+    </div>
+
+    <!--MENUBAR SCRIPT-->
+
+    <script>
+        const burger = document.getElementById('burger');
+        const links = document.getElementById('links');
+
+        burger.addEventListener('click', () => {
+            links.classList.toggle('active');
+        })
+
+        $("#links").click(() => {
+            links.classList.remove('active');
+        })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+    $(window).scroll(function(){
+        if($(window).scrollTop()){
+            $("header").addClass("black");
+        }
+        else{
+            $("header").removeClass("black");
+        }
+    });
+    </script>
+
+    <!--AOS ANIMATION SCRIPT-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous"></script>
+
+    <!-- ANIMATION -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js%22%3E"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+
+</body>
+</html>
