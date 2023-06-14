@@ -1,0 +1,262 @@
+.home{
+    height: 1100px;
+    width:100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.575)), url("assests/HomeBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 123px;
+        line-height: 184px;
+        display: flex;
+        align-items: center;
+        
+        color: #077712;
+        
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+        padding-top: 250px;
+        padding-left: 116px;
+        
+
+    }
+
+    .subtitle{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 105px;
+        display: flex;
+        align-items: center;
+        
+        color: rgb(194, 193, 193);
+        
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding-left: 116px;
+    }
+
+    .btncont{
+        padding-left: 114px;
+
+        .download{
+            width: 273px;
+            height: 79px;
+            background: rgba(255, 255, 255, 0.77);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 28px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 60px;
+            
+            color: #0a0a0a;
+            
+            margin: 22px;
+
+            outline: none;
+            border: none;
+            
+        }
+        .download:hover{
+            background-color: #077712;
+            color: #D9D9D9;
+            transition: 500ms ease;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .learn{
+            .lbtn{
+            width: 273px;
+            height: 79px;
+            background: rgba(255, 255, 255, 0.77);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 28px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 60px;
+            
+            color: #0a0a0a;
+            
+            margin: 22px;
+
+            outline: none;
+            border: none;
+            transition: transform 0.3s ease;
+            }
+        }
+        
+        .lbtn:hover{
+            background-color: #077712;
+            color: #D9D9D9;
+            transition: 500ms ease;
+            transition: transform 0.3s ease;
+            
+            transform: scale(1.1);
+        }
+    }
+    @media screen and (max-width: 1039px){
+        .title{
+            font-size: 100px;
+            padding-left: 100px;
+        }
+        .subtitle{
+            font-size: 60px;
+            padding-left: 100px;
+        }
+    
+        .btncont{
+            padding-left: 90px;
+    
+            .download{
+                transform: scale(.9);
+            }
+            .learn{
+                .lbtn{
+                    transform: scale(.9);
+                }
+            }
+            
+            
+        }
+        
+    }
+    
+    @media screen and (max-width: 945px){
+        .title{
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .subtitle{
+            padding-left: 20px;
+            padding-right: 20px;
+            justify-content: center;
+        }
+        
+        .btncont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            .download{
+                margin: 23px;
+            }
+            .learn{
+                .lbtn{
+                    transform: scale(.9);
+                }
+            }
+        }
+        
+    }
+    
+    @media screen and (max-width:900px){
+        .subtitle{
+            font-size: 50px;
+        }
+    
+    }
+    
+    @media screen and (max-width: 790px){
+        .title{
+            font-size: 90px;
+        }
+        .subtitle{
+            font-size: 45px;
+            text-align: center;
+        }
+    
+        .btncont{
+            .download{
+                transform: scale(.8);
+                margin: 20px;
+            }
+            .learn{
+                .lbtn{
+                    transform: scale(.8);
+                    margin: 20px;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width:670px){
+        .title{
+            padding-top: 150px;
+        }
+        .btncont{
+            display: flex;
+            flex-direction: column;
+            
+    
+        }
+    }
+    
+    @media screen and (max-width: 484px){
+        .title{
+            font-size: 80px;
+           
+        }
+        .subtitle{
+            font-size: 40px;
+    
+        }
+    
+        .btncont{
+            .download{
+                transform: scale(.7);
+            }
+            .learn{
+                .lbtn{
+                    transform: scale(.7);
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 420px){
+        .title{
+            font-size: 75px;
+           
+        }
+        .subtitle{
+            font-size: 35px;
+    
+        }
+    
+        .btncont{
+            .download{
+                transform: scale(.65);
+            }
+            .learn{
+                .lbtn{
+                    transform: scale(.65);
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width:386px){
+        .title{
+            font-size: 60px;
+        }
+        .subtitle{
+            font-size: 30px;
+        }
+    }
+    
+    
+
+}
+
+
